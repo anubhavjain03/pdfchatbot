@@ -1,5 +1,5 @@
 streamlit
-PyPDF2
+PyPDF2==3.0.1
 langchain
 langchain-openai
 langchain-community
