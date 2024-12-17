@@ -2,11 +2,11 @@ import streamlit as st
 import os
 
 # Try importing the modern PdfReader
-
-from PyPDF2 import PdfReader  # Modern PyPDF2 import for reading PDF files
-    except ImportError:
-        # Fallback to older PyPDF2 import syntax for compatibility
-            from PyPDF2 import PdfFileReader as PdfReader
+try:
+    from PyPDF2 import PdfReader  # Modern PyPDF2 import for reading PDF files
+except ImportError:
+    # Fallback to older PyPDF2 import syntax for compatibility
+    from PyPDF2 import PdfFileReader as PdfReader
 
 from langchain_openai import ChatOpenAI  # OpenAI Chat LLM integration
 from langchain.text_splitter import CharacterTextSplitter  # Splits text into manageable chunks
