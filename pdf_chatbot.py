@@ -1,8 +1,7 @@
 import streamlit as st
 
-try:
-    # Try importing the modern PdfReader
-    from PyPDF2 import PdfReader
+# Try importing the modern PdfReader
+from PyPDF2 import PdfReader
 except ImportError:
     # Fallback to older PyPDF2 import syntax
     from PyPDF2 import PdfFileReader as PdfReader
