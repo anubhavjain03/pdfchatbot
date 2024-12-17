@@ -24,9 +24,8 @@ if not openai_key:
 os.environ["OPENAI_API_KEY"] = openai_key  # Set the key as an environment variable
 
 # Page configuration
-st.set_page_config(page_title="Chat with PDF", page_icon="\ud83d\udcda")
-st.title("Chat with your PDF \ud83d\udcda")
-
+st.set_page_config(page_title="Chat with PDF", page_icon="")  # No emoji
+st.title("Chat with your PDF")
 # Initialize session state variables to maintain chat state
 if "conversation" not in st.session_state:
     st.session_state.conversation = None
