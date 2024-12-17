@@ -161,4 +161,4 @@ if st.session_state.processComplete:  # Display chat interface only if processin
         with st.chat_message(role):
             st.write(message)
 else:
-    st.write("\ud83d\udc4b Upload your PDFs in the sidebar to get started!")
+    st.write("👋 Upload your PDFs in the sidebar to get started!")
